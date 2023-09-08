@@ -2,7 +2,6 @@ const UTC = document.querySelector('[data-testid="currentUTCTime"]')
 const DAY = document.querySelector('[data-testid="currentDayOfTheWeek"]')
 
 
-
 function getUtcTime() {
     const utcTime = new Date();
     const utc = utcTime.getTime()
