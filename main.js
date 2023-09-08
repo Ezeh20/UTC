@@ -11,6 +11,6 @@ function getUtcTime() {
     const daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
     UTC.textContent = `UTC Time :  ${watTime}`
-    DAY.textContent = `Today is  : ${daysOfTheWeek[utcTime.getDay()]}, the ${day}th day of the week.`
+    DAY.textContent = `Day of the week  : ${daysOfTheWeek[utcTime.getDay()]}, the ${day}th day of the week.`
 }
 setInterval(getUtcTime, 1000);
