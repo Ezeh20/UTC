@@ -1,5 +1,5 @@
-const UTC = document.getElementById("utc")
-const DAY = document.getElementById("day")
+const UTC = document.querySelector('[data-testid="currentUTCTime"]')
+const DAY = document.querySelector('[data-testid="currentDayOfTheWeek"]')
 
 
 
@@ -11,4 +11,6 @@ function getUtcTime() {
     UTC.textContent = `UTC Time :  ${utc}`
     DAY.textContent = `Day of the week  : ${daysOfTheWeek[utcTime.getDay()]}`
 }
-setInterval(getUtcTime, 1000);
+setInterval(() => {
+    getUtcTime()
+}, 1);
