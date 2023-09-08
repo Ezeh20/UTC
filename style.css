@@ -21,31 +21,46 @@ body {
 .container {
     margin-inline: 1.5rem;
     max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
 }
 
 .content {
     display: flex;
     flex-direction: column;
-    padding: 5rem 0;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #888;
+    padding: .5rem;
     gap: 1rem;
 }
 
 .text {
     font-size: 24px;
     font-weight: 700;
+
 }
 
 .textalt {
     font-weight: 400;
     font-size: 24px;
+    text-align: center;
 }
 
 .img-container {
-    max-width: 400px;
+    max-width: 300px;
+}
+
+.img {
+    border-radius: 15px;
 }
 
 .utc {
     font-size: 24px;
+    text-align: center;
     font-weight: 600;
     color: #333;
 }
@@ -53,6 +68,11 @@ body {
 @media screen and (min-width: 1440px) {
     .container {
         margin-inline: auto;
+    }
+
+    .content {
+        gap: 2rem;
+        border: 2px solid;
     }
 
     .text {
