@@ -32,7 +32,7 @@ body {
     padding: .5rem;
     margin-top: 4rem;
     gap: 1rem;
-    padding: 2rem;
+    padding: 2rem 3rem;
 }
 
 .text {
@@ -68,19 +68,19 @@ body {
     }
 
     .content {
-        margin-top: 3rem;
+        margin-top: 4rem;
         border: 2px solid;
     }
 
     .text {
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .textalt {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .utc {
-        font-size: 32px;
+        font-size: 24px;
     }
 }
