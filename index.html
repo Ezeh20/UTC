@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    <script src="main.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +14,20 @@
 </head>
 
 <body>
-
+    <main>
+        <section class="container content">
+            <div class="img-container">
+                <img data-testid="slackDisplayImage" src="ciijay.jpg" alt="Ezeh-Chijioke" class="img">
+            </div>
+            <p data-testid="slackUserName" class="text">My name is Ezeh Chijioke.</p>
+            <p data-testid="currentDayOfTheWeek" id="day" class="text textalt"></p>
+            <p data-testid="currentUTCTime" id="utc" class="utc"></p>
+            <p data-testid="myTrack" class="text textalt">Track : Frontend</p>
+            <a data-testid=“githubURL” href="https://github.com/Ezeh20/UTC" class="text textalt">Link to the GitHub
+                Repo</a>
+        </section>
+    </main>
+    <script src="main.js"></script>
 </body>
-<main>
-    <section class="container content">
-        <div class="img-container">
-            <img data-testid="slackDisplayImage" src="ciijay.jpg" alt="Ezeh-Chijioke" class="img">
-        </div>
-        <p data-testid="slackUserName" class="text">My name is Ezeh Chijioke.</p>
-        <p data-testid="currentDayOfTheWeek" id="day" class="text textalt"></p>
-        <p data-testid="currentUTCTime" id="utc" class="utc"></p>
-        <p data-testid="myTrack" class="text textalt">Track : Frontend</p>
-        <a data-testid=“githubURL” href="https://github.com/Ezeh20/UTC" class="text textalt">Link to the GitHub Repo</a>
-    </section>
-
-</main>
 
 </html>
