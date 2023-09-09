@@ -7,7 +7,8 @@
 }
 
 
-p {
+p,
+h1 {
     margin-bottom: 1rem;
 }
 
@@ -16,7 +17,7 @@ img {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
 
@@ -32,18 +33,18 @@ section {
     padding: 2rem 3rem;
 }
 
-div{
+div {
     max-width: 450px;
 }
 
 img[data-testid="slackDisplayImage"] {
     border-radius: 15px;
     margin-bottom: 1rem;
-   
+
 }
 
-p[data-testid="slackUserName"] {
-    font-size: 18px;
+h1[data-testid="slackUserName"] {
+    font-size: 32px;
     font-weight: 700;
 }
 
@@ -71,12 +72,12 @@ a[data-testid=“githubURL”] {
 @media screen and (min-width: 500px) {
     section {
         margin-inline: auto;
-        margin-top: 4rem;
+        margin-top: 5.2rem;
         border: 2px solid;
     }
 
-    p[data-testid="slackUserName"] {
-        font-size: 32px;
+    h1[data-testid="slackUserName"] {
+        font-size: 42px;
         font-weight: 700;
     }
 
