@@ -2,13 +2,18 @@ const UTC = document.querySelector('[data-testid="currentUTCTime"]')
 const DAY = document.querySelector('[data-testid="currentDayOfTheWeek"]')
 
 
+function getDay() {
+    const date = new Date();
+    const daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const day = daysOfTheWeek[date.getDay()]
+    return day;
+}
+DAY.textContent = `${getDay()}`
+
 function getUtcTime() {
     const utcTime = new Date();
     const utc = utcTime.getTime()
-    const daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-    UTC.textContent = `Current UTC Time :  ${utc}`
-    DAY.textContent = `Day of the week  : ${daysOfTheWeek[utcTime.getDay()]}`
+    UTC.textContent = `${utc}`
 }
 setInterval(() => {
     getUtcTime()
