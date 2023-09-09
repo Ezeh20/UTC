@@ -7,7 +7,7 @@
 }
 
 
-p{
+p {
     margin-bottom: 1rem;
 }
 
@@ -20,12 +20,9 @@ body {
     font-size: 16px;
 }
 
-.container {
+section {
     margin-inline: 1.5rem;
     max-width: 500px;
-}
-
-.content {
     max-width: max-content;
     border: 1px solid #888;
     border-radius: 15px;
@@ -35,52 +32,71 @@ body {
     padding: 2rem 3rem;
 }
 
-.text {
-    font-size: 18px;
-    font-weight: 700;
-
-}
-
-.textalt {
-    font-weight: 400;
-    font-size: 18px;
-
-}
-
-.img-container {
+div{
     max-width: 450px;
 }
 
-.img {
+img[data-testid="slackDisplayImage"] {
     border-radius: 15px;
     margin-bottom: 1rem;
+   
 }
 
-.utc {
+p[data-testid="slackUserName"] {
     font-size: 18px;
-    font-weight: 600;
-    color: #333;
+    font-weight: 700;
 }
+
+p[ data-testid="currentDayOfTheWeek"] {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+p[data-testid="currentUTCTime"] {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+p[data-testid="myTrack"] {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a[data-testid=“githubURL”] {
+    font-weight: 400;
+    font-size: 18px;
+}
+
 
 @media screen and (min-width: 500px) {
-    .container {
+    section {
         margin-inline: auto;
-    }
-
-    .content {
         margin-top: 4rem;
         border: 2px solid;
     }
 
-    .text {
+    p[data-testid="slackUserName"] {
         font-size: 32px;
+        font-weight: 700;
     }
 
-    .textalt {
+    p[ data-testid="currentDayOfTheWeek"] {
+        font-weight: 400;
         font-size: 24px;
     }
 
-    .utc {
+    p[data-testid="currentUTCTime"] {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    p[data-testid="myTrack"] {
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    a[data-testid=“githubURL”] {
+        font-weight: 400;
         font-size: 24px;
     }
 }
