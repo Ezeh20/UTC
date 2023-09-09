@@ -12,9 +12,8 @@ DAY.textContent = `${getDay()}`
 
 function getUtcTime() {
     const utcTime = new Date();
-    const utc = utcTime.getTime()
-    UTC.textContent = `${utc}`
+    const utc = utcTime.getTime();
+    UTC.textContent = `${utc}`;
 }
-setInterval(() => {
-    getUtcTime()
-}, 1);
+
+setInterval(getUtcTime, 1);
